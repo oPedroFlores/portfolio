@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import NavBar from './modules/NavBar';
+import SobreMim from './modules/SobreMim';
+import Tecnologias from './modules/Tecnologias';
+import Projetos from './modules/Projetos';
+import Certificates from './modules/Certificates';
+import Contact from './modules/Contact';
 
 function App() {
+  const [vhNow, setVhNow] = useState(0);
+  const [lenguage, setLenguage] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar
+        vhNow={vhNow}
+        setVhNow={setVhNow}
+        lenguage={lenguage}
+        setLenguage={setLenguage}
+      />
+      <SobreMim lenguage={lenguage} />
+      <Tecnologias vhNow={vhNow} setVhNow={setVhNow} lenguage={lenguage} />
+      <Projetos vhNow={vhNow} lenguage={lenguage} />
+      <Certificates lenguage={lenguage} vhNow={vhNow} />
+      <Contact lenguage={lenguage} vhNow={vhNow} />
+    </>
   );
 }
 

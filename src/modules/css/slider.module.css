@@ -1,0 +1,119 @@
+.slide{
+  display: none;
+  transition: all 0.5s linear;
+  position: relative;
+}
+
+.active{
+  display: inline-block;
+}
+
+.arrow{
+  user-select: none;
+  padding: 5px;
+  margin: 30px auto;
+  cursor: pointer;
+  background-color:  rgba(0, 0, 0, .5);
+  height: 50px;
+  width: 50px;
+  top: calc(50% - 50px);
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+
+.arrowDisabled{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scale(.8);
+  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+  pointer-events: none; /* Impede a interação do cursor com o elemento */
+}
+
+
+.buttonUp{
+  position: absolute;
+  left: -12%;
+}
+
+.buttonDown{
+  position: absolute;
+  left: 105%;
+}
+
+
+.buttonDown:hover {
+  transform: translate3d(10px, 0, 0);
+}
+
+.buttonUp:hover {
+  transform: translate3d(-10px, 0, 0);
+}
+
+.buttonUp::after,
+.buttonDown::after {
+  transition: .5s ease all;
+  content: "";
+  position: absolute;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.buttonUp::after {
+  left: 15px;
+  top: 10px;
+  transform: rotate(-45deg);
+}
+
+.buttonDown::after {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.nextSlide{
+  display: inline-block;
+  left: 90%;
+  transform: scale(.4);
+  position: absolute;
+  animation: nextSlide 2s ease;
+}
+
+.nextSlideAnimation{
+  left: 110%;
+}
+
+.prevSlide{
+  display: inline-block;
+  left: -90%;
+  transform: scale(.4);
+  position: absolute;
+}
+
+.nextSlideAnimation {
+  animation: nextSlideAnimation 0.5s ease;
+}
+
+@keyframes nextSlideAnimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+.prevSlideAnimation {
+  animation: prevSlideAnimation 0.5s ease;
+}
+
+@keyframes prevSlideAnimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: -90%;
+  }
+}

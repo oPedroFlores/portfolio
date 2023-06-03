@@ -1,0 +1,26 @@
+{
+  "pt": {
+    "aboutMe": "Sobre Mim",
+    "aboutMeSelected": "<Sobre Mim/>",
+    "techs": "Tecnologias",
+    "techsSelected": "<Tecnologias/>",
+    "certificates": "Certificados",
+    "certificatesSelected": "<Certificados/>",
+    "projects": "Projetos",
+    "projectsSelected": "<Projetos/>",
+    "contact": "Contato",
+    "contactSelected": "<Contato/>"
+  },
+  "en": {
+    "aboutMe": "About Me",
+    "aboutMeSelected": "<About Me/>",
+    "techs": "Techs",
+    "techsSelected": "<Techs/>",
+    "certificates": "Certificates",
+    "certificatesSelected": "<Certificates/>",
+    "projects": "Projects",
+    "projectsSelected": "<Projects/>",
+    "contact": "Contact",
+    "contactSelected": "<Contact/>"
+  }
+}

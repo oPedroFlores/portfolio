@@ -1,0 +1,166 @@
+{
+  "pt": [
+    {
+      "id": 1,
+      "tec": "JavaScript",
+      "level": 4.5,
+      "levelDesc": "Experiente",
+      "desc": "Tenho um sólido conhecimento em javascript. Possuo alguns projetos e já realizei alguns cursos sobre.",
+      "icon": "js"
+    },
+    {
+      "id": 2,
+      "tec": "React",
+      "level": 3.5,
+      "levelDesc": "Intermediário",
+      "desc": "Tenho um bom conhecimento em React. Já realizei alguns cursos e projetos sobre, inclusive este portfólio foi feito com React e algumas de suas bibliotecas.",
+      "icon": "jsx"
+    },
+    {
+      "id": 3,
+      "tec": "Node",
+      "level": 2,
+      "levelDesc": "Iniciante",
+      "desc": "Estou estudando sobre Node atualmente. Já tenho projetos utilizando esta tecnologia e realizei um curso recentemente sobre. Pretendo continuar me aprofundando nessa tecnologia.",
+      "icon": "node"
+    },
+    {
+      "id": 4,
+      "tec": "Html",
+      "level": 4.5,
+      "levelDesc": "Experiente",
+      "desc": "Me considero experiente na linguagem de marcação HTML. Foi uma das primeiras tecnologias que estudei sobre quando resolvi me aprofundar no meu estudo de Front-End.",
+      "icon": "html"
+    },
+    {
+      "id": 5,
+      "tec": "CSS",
+      "level": 4.5,
+      "levelDesc": "Experiente",
+      "desc": "Considero que já tenho uma ótima base em CSS. Comecei a estudar há alguns anos junto com o HTML.",
+      "icon": "css"
+    },
+    {
+      "id": 6,
+      "tec": "MySQL",
+      "level": 3,
+      "levelDesc": "Avançado",
+      "desc": "Tenho experiência prática no desenvolvimento e gerenciamento de bancos de dados utilizando MySQL. Estou familiarizado com consultas complexas visto que já utilizei o MySQL em projetos e na faculdade e estou sempre em busca de aprimorar minhas habilidades com esta tecnologia.",
+      "icon": "mysql"
+    },
+    {
+      "id": 7,
+      "tec": "Express",
+      "level": 2,
+      "levelDesc": "Iniciante",
+      "desc": "Acredito que já tenho uma certa base em Express (Framework para Node.js). Junto de alguns projetos de Node tenho utilizado Express e estou contente com os resultados.",
+      "icon": "express"
+    },
+    {
+      "id": 8,
+      "tec": "Bootstrap",
+      "level": 3,
+      "levelDesc": "Intermediário",
+      "desc": "Já utilizei bootstrap em alguns projetos e inclusive na faculdade. Possuo uma conclusão de curso que é focado apenas no Bootstrap.",
+      "icon": "bootstrap"
+    },
+    {
+      "id": 9,
+      "tec": "PHP",
+      "level": 2,
+      "levelDesc": "Intermediário",
+      "desc": "Tenho familiaridade com PHP e já utilizei ele em alguns projetos, como o MyFriends e o Blog Node. Possuo conclusão em um curso que é focado no PHP",
+      "icon": "php"
+    },
+    {
+      "id": 10,
+      "tec": "wordpress",
+      "level": 2,
+      "levelDesc": "Iniciante",
+      "desc": "Já utilizei bootstrap em alguns projetos. O projeto que mais utilizei foi na rede social MyFriends, inspirada no instagram e feita com base no curso de React Completo da Origamid.",
+      "icon": "wordpress"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "tec": "JavaScript",
+      "level": 4.5,
+      "levelDesc": "Experienced",
+      "desc": "I have a solid knowledge of JavaScript. I have worked on several projects and have taken multiple courses on it.",
+      "icon": "js"
+    },
+    {
+      "id": 2,
+      "tec": "React",
+      "level": 3.5,
+      "levelDesc": "Intermediate",
+      "desc": "I have a good understanding of React. I have completed several courses and projects using React, including this portfolio which was built with React and some of its libraries.",
+      "icon": "jsx"
+    },
+    {
+      "id": 3,
+      "tec": "Node",
+      "level": 2,
+      "levelDesc": "Beginner",
+      "desc": "I am currently studying Node. I have already worked on projects using this technology and recently completed a course on it. I plan to further deepen my knowledge in this area.",
+      "icon": "node"
+    },
+    {
+      "id": 4,
+      "tec": "HTML",
+      "level": 4.5,
+      "levelDesc": "Experienced",
+      "desc": "I consider myself experienced in HTML markup language. It was one of the first technologies I studied when I decided to delve into Front-End development.",
+      "icon": "html"
+    },
+    {
+      "id": 5,
+      "tec": "CSS",
+      "level": 4.5,
+      "levelDesc": "Experienced",
+      "desc": "I have a strong foundation in CSS. I started studying it a few years ago alongside HTML.",
+      "icon": "css"
+    },
+    {
+      "id": 6,
+      "tec": "MySQL",
+      "level": 3,
+      "levelDesc": "Advanced",
+      "desc": "I have practical experience in developing and managing databases using MySQL. I am familiar with complex queries as I have used MySQL in projects and during my college studies. I am always seeking to improve my skills in this technology.",
+      "icon": "mysql"
+    },
+    {
+      "id": 7,
+      "tec": "Express",
+      "level": 2,
+      "levelDesc": "Beginner",
+      "desc": "I believe I have a good foundation in Express (a framework for Node.js). I have used Express in conjunction with some Node projects and I am satisfied with the results.",
+      "icon": "express"
+    },
+    {
+      "id": 8,
+      "tec": "Bootstrap",
+      "level": 3,
+      "levelDesc": "Intermediate",
+      "desc": "I have used Bootstrap in several projects, including during my college studies. I have completed a course focused solely on Bootstrap.",
+      "icon": "bootstrap"
+    },
+    {
+      "id": 9,
+      "tec": "PHP",
+      "level": 2,
+      "levelDesc": "Intermediate",
+      "desc": "I am familiar with PHP and have used it in several projects, such as MyFriends and the Blog Node. I have completed a course focused on PHP.",
+      "icon": "php"
+    },
+    {
+      "id": 10,
+      "tec": "WordPress",
+      "level": 2,
+      "levelDesc": "Beginner",
+      "desc": "I have used WordPress in some projects. The project I used it the most was the social network MyFriends, inspired by Instagram and built based on the Complete React Course by Origamid.",
+      "icon": "wordpress"
+    }
+  ]
+}

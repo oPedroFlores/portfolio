@@ -1,0 +1,122 @@
+{
+  "pt": [
+    {
+      "id": 1,
+      "name": "MyFriends",
+      "desc": "MyFriends foi um projeto que desenvolvi com base no curso de React Completo da Origamid. Adicionei algumas funcionalidades como dar like, remover comentários e reatividade entre visualizações e curtidas.",
+      "tecs": ["JavaScript", "React", "Wordpress", "PHP", "CSS", "HTML"],
+      "image": 0,
+      "link": "https://github.com/oPedroFlores/MyFriends"
+    },
+    {
+      "id": 2,
+      "name": "Blog Node",
+      "desc": "Blog Node foi um projeto que fiz com base em um curso de Node. Permite a criação de usuários, artigos e categorias de artigos. Possui proteção de rotas",
+      "tecs": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "MySQL",
+        "Sequelize",
+        "Bootstrap",
+        "CSS",
+        "HTML"
+      ],
+      "image": 1,
+      "link": "https://github.com/oPedroFlores/blog-node"
+    },
+    {
+      "id": 3,
+      "name": "CRUD Users",
+      "desc": "Este foi um projeto básico que fiz com utilizando React, Node.js e MySQL.",
+      "tecs": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "MySQL",
+        "CSS",
+        "HTML",
+        "Axios",
+        "Styled-Components"
+      ],
+      "image": 2,
+      "link": "https://github.com/oPedroFlores/CrudUsers-React-Node"
+    },
+    {
+      "id": 4,
+      "name": "Simples Login e Registro",
+      "desc": "Formulário de login e formulário de registro animados com especificação de parâmetros para email e senha. Feito com HTML, CSS e Javascript.",
+      "tecs": ["JavaScript", "CSS", "HTML"],
+      "image": 3,
+      "link": "https://github.com/oPedroFlores/simple-login-and-register"
+    },
+    {
+      "id": 5,
+      "name": "Bike Shop - Landing Page",
+      "desc": "Landing Page simples de uma loja de bicicletas utilizando HTML e CSS.",
+      "tecs": ["CSS", "HTML"],
+      "image": 4,
+      "link": "https://github.com/oPedroFlores/simples-landing-page-bike"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "name": "MyFriends",
+      "desc": "MyFriends was a project I developed based on the Complete React Course by Origamid. I added some features such as liking, removing comments, and reactivity between views and likes.",
+      "tecs": ["JavaScript", "React", "Wordpress", "PHP", "CSS", "HTML"],
+      "image": 0,
+      "link": "https://github.com/oPedroFlores/MyFriends"
+    },
+    {
+      "id": 2,
+      "name": "Blog Node",
+      "desc": "Blog Node was a project I created based on a Node course. It allows the creation of users, articles, and article categories. It has route protection.",
+      "tecs": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "MySQL",
+        "Sequelize",
+        "Bootstrap",
+        "CSS",
+        "HTML"
+      ],
+      "image": 1,
+      "link": "https://github.com/oPedroFlores/blog-node"
+    },
+    {
+      "id": 3,
+      "name": "CRUD Users",
+      "desc": "This was a basic project I created using React, Node.js, and MySQL.",
+      "tecs": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "MySQL",
+        "CSS",
+        "HTML",
+        "Axios",
+        "Styled-Components"
+      ],
+      "image": 2,
+      "link": "https://github.com/oPedroFlores/CrudUsers-React-Node"
+    },
+    {
+      "id": 4,
+      "name": "Simple Login and Register",
+      "desc": "Animated login and register forms with parameter specification for email and password. Built with HTML, CSS, and JavaScript.",
+      "tecs": ["JavaScript", "CSS", "HTML"],
+      "image": 3,
+      "link": "https://github.com/oPedroFlores/simple-login-and-register"
+    },
+    {
+      "id": 5,
+      "name": "Bike Shop - Landing Page",
+      "desc": "Simple landing page for a bike shop using HTML and CSS.",
+      "tecs": ["CSS", "HTML"],
+      "image": 4,
+      "link": "https://github.com/oPedroFlores/simples-landing-page-bike"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+.section {
+  height: 100vh;
+  position: relative;
+  background: var(--secondBackground);
+  color: var(--secondColor);
+  padding-top: 75px;
+}
+
+.certificates {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.certificate {
+  transition: 0.3s ease-in-out all;
+  padding: 20px;
+  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  width: 300px;
+  flex: none;
+  align-items: center;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 56px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 56px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 56px -7px rgba(0, 0, 0, 0.75);
+}
+
+.certificate:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  opacity: 1;
+}
+
+.certificate:not(:hover) {
+  opacity: 0.7;
+}
+
+.certificate span{
+  margin: auto;
+}
+
+.certificate h4{
+  max-width: 100%;
+  font-size: 1.125rem;
+}
+
+.certificateLink{
+  margin-top: auto;
+  color: unset;
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 5px 30px;
+  box-shadow: 0 0px 0px 2px inset;
+  bottom: 10px;
+}
+
+
+.certificateDesc {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.certificateLink:hover {
+  box-shadow: #e4ded0 0 0px 0px 40px inset;
+  transform: scale(1.05);
+  color: black;
+}
+.certificateTime{
+  margin-top: auto;
+  border: 1px solid;
+  width: 40%;
+  padding: 5px;
+}
+
+/* media */
+
+@media (max-width: 1850px) {
+  .certificate{
+    padding: 20px;
+    width: 250px;
+    height: 200px;
+  }
+  .certificate h4{
+    font-size: 1rem;
+    width: 100%;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 1000px) {
+  .certificate{
+    padding: 20px;
+    width: 200px;
+    height: 160px;
+  }
+  .certificateTime{
+    width: 50%;
+  }
+  .certificateDesc{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .certificate{
+    gap: 10px;
+    padding: 20px;
+    max-width: 150px;
+    max-height: 120px;
+  }
+  .certificateTime{
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .certificate{
+    max-height: 80px;
+    max-width: 120px;
+  } 
+  .certificate h4{
+    margin-top: 0;
+    font-size: .75rem;
+  } 
+  .certificateLink{
+    font-size: 80%;
+    margin-top: 0;
+  }
+
+}
+
+
+@media (max-width: 650px){
+}
+
+@media (max-width: 600px){
+}
+
+
+@media (max-width: 550px){
+}

@@ -1,0 +1,150 @@
+{
+  "pt": [
+    {
+      "id": 1,
+      "name": "Análise e Desenvolvimento de Sistemas",
+      "desc": "Realização do curso de Análise e Desenvolvimento de Sistemas pela FATEC de Lins.",
+      "time": "Três Anos",
+      "size": 1,
+      "link": "https://www.linkedin.com/in/pedrolpflores/"
+    },
+    {
+      "id": 2,
+      "name": "JavaScript Completo ES6",
+      "desc": "Curso da Origamid para entendimento completo do JavaScript na verão ES6.",
+      "time": "74 horas",
+      "size": 0,
+      "link": "https://origamid.com/certificate/58cb5c7a"
+    },
+    {
+      "id": 3,
+      "name": "React Completo",
+      "desc": "Curso da Origamid completo sobre o React.",
+      "time": "36 horas",
+      "size": 0,
+      "link": "https://origamid.com/certificate/751c2f2b"
+    },
+    {
+      "id": 4,
+      "name": "Formação Node.js",
+      "desc": "Curso da feito na Udemy para a compreensão da tecnologia Node.js e algumas de suas bibliotecas.",
+      "time": "50 horas",
+      "size": 0,
+      "link": "https://www.udemy.com/certificate/UC-7be380e2-d712-4243-8cde-51239f9d1712/"
+    },
+    {
+      "id": 5,
+      "name": "PHP Essencial",
+      "desc": "Curso da feito na Udemy para a compreensão da tecnologia PHP.",
+      "time": "16.5 horas",
+      "size": 0,
+      "link": "https://www.udemy.com/certificate/UC-031ae13b-4550-4296-9f66-af1cf2d83ec2/"
+    },
+    {
+      "id": 6,
+      "name": "CSS Flexbox",
+      "desc": "Curso da feito na Origamid para a compreensão da propriedade FlexBox do css.",
+      "time": "6 horas",
+      "size": 0,
+      "link": "https://www.origamid.com/certificate/d2c5a417/"
+    },
+    {
+      "id": 7,
+      "name": "HTML5 E CSS3 PARTE 1, 2, 3 & 4",
+      "desc": "Curso da feito na Alura para a abertura dos estudos em HTML e CSS.",
+      "time": "32 horas",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/0ab361bf-335e-42de-b8d6-921a3af98b8a"
+    },
+    {
+      "id": 8,
+      "name": "HTTP: ENTENDENDO A WEB POR BAIXO DOS PANOS",
+      "desc": "Curso da feito na Alura para aperfeiçoar a compreensão sobre como a Web funciona.",
+      "time": "14 horas",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
+    },
+    {
+      "id": 9,
+      "name": "VETORES E ANIMAÇÃO COM SVG",
+      "desc": "Curso da feito na Alura para a compreensão sobre o funcionamento da tag svg e como fazer animações com a mesma.",
+      "time": "6 horas",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "name": "Analysis and Systems Development",
+      "desc": "Completion of the Analysis and Systems Development course at FATEC de Lins.",
+      "time": "Three Years",
+      "size": 1,
+      "link": "https://www.linkedin.com/in/pedrolpflores/"
+    },
+    {
+      "id": 2,
+      "name": "Complete JavaScript ES6",
+      "desc": "Origamid course for a complete understanding of JavaScript in ES6 version.",
+      "time": "74 hours",
+      "size": 0,
+      "link": "https://origamid.com/certificate/58cb5c7a"
+    },
+    {
+      "id": 3,
+      "name": "Complete React",
+      "desc": "Origamid course covering React comprehensively.",
+      "time": "36 hours",
+      "size": 0,
+      "link": "https://origamid.com/certificate/751c2f2b"
+    },
+    {
+      "id": 4,
+      "name": "Node.js Development",
+      "desc": "Udemy course for understanding the Node.js technology and some of its libraries.",
+      "time": "50 hours",
+      "size": 0,
+      "link": "https://www.udemy.com/certificate/UC-7be380e2-d712-4243-8cde-51239f9d1712/"
+    },
+    {
+      "id": 5,
+      "name": "Essential PHP",
+      "desc": "Udemy course for understanding the PHP technology.",
+      "time": "16.5 hours",
+      "size": 0,
+      "link": "https://www.udemy.com/certificate/UC-031ae13b-4550-4296-9f66-af1cf2d83ec2/"
+    },
+    {
+      "id": 6,
+      "name": "CSS Flexbox",
+      "desc": "Origamid course for understanding the Flexbox property in CSS.",
+      "time": "6 hours",
+      "size": 0,
+      "link": "https://www.origamid.com/certificate/d2c5a417/"
+    },
+    {
+      "id": 7,
+      "name": "HTML5 and CSS3 Part 1, 2, 3 & 4",
+      "desc": "Alura course to start studying HTML and CSS.",
+      "time": "32 hours",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/0ab361bf-335e-42de-b8d6-921a3af98b8a"
+    },
+    {
+      "id": 8,
+      "name": "HTTP: Understanding the Web Behind the Scenes",
+      "desc": "Alura course to enhance understanding of how the Web works.",
+      "time": "14 hours",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
+    },
+    {
+      "id": 9,
+      "name": "Vectors and Animation with SVG",
+      "desc": "Alura course for understanding the functionality of the SVG tag and how to create animations with it.",
+      "time": "6 hours",
+      "size": 0,
+      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
+    }
+  ]
+}
