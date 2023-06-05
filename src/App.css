@@ -330,6 +330,26 @@ font-size: 1.25rem !important;
   }
 }
 
+@media (max-width: 500px){
+  .sobreMim div{
+    margin: 0 auto;
+  }
+  .nameApresentation{
+    margin: auto;
+    font-size: 4rem !important;
+    margin: auto auto;
+  }
+  .waveHand{
+    font-size: 3rem !important;
+  }
+  .textApresentation{
+    font-size: 1rem;
+    margin: 0 10%;
+  }
+  
+}
+
+
 .nameApresentation{
   top: 0;
   display: flex;
@@ -474,12 +494,18 @@ flex-direction: column;
   align-items: center;
   position: relative;
 }
+
 .tecImage{
   position: relative;
   width: 350px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0, 0.82);
+}
+
+@media (max-width: 600px){
+  .techsDivImage{
+  }
 }
 
 .parallax-text{

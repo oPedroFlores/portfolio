@@ -52,9 +52,11 @@ const Contact = ({ lenguage, vhNow }) => {
             initial="hidden"
             animate={mainControls}
           >
-            {lenguage
-              ? 'Your message has been sent successfully :)'
-              : 'Sua mensagem foi enviada com sucesso!'}
+            {lenguage ? (
+              <h4>Your message has been sent successfully</h4>
+            ) : (
+              <h4>Sua mensagem foi enviada com sucesso!</h4>
+            )}
           </motion.h4>
         ) : (
           <h4>
@@ -96,7 +98,6 @@ const Contact = ({ lenguage, vhNow }) => {
         ) : (
           ''
         )}
-        {success ? <h4>Erro ao enviar o email!</h4> : ''}
       </div>
     </section>
   );

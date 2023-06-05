@@ -300,6 +300,7 @@
     margin-top: 0;
   }
   .projectTop h3{
+    margin: 10%;
     font-size: 2rem;
   }
   .projectTop span{
@@ -313,6 +314,12 @@
     align-items: center;
   }
   .linkProject{
-    top: 87%;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: auto;
+    height: 10%;
+  }
+  .projectTechs{
+    margin-top: auto !important;
   }
 }

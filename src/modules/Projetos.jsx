@@ -141,14 +141,6 @@ const SimpleSlider = ({ vhNow, lenguage }) => {
             transition={{ duration: 0.5 }}
           >
             <div className={styles.projectContent}>
-              <a
-                href={project.link}
-                className={styles.linkProject}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {lenguage ? 'View repository' : 'Ver repositório'}
-              </a>
               <div className={styles.projectTop}>
                 <h3>{project.name}</h3>
                 <span>{project.desc}</span>
@@ -163,6 +155,14 @@ const SimpleSlider = ({ vhNow, lenguage }) => {
                   </span>
                 ))}
               </div>
+              <a
+                href={project.link}
+                className={styles.linkProject}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {lenguage ? 'View repository' : 'Ver repositório'}
+              </a>
             </div>
           </motion.div>
         ))}

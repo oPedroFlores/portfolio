@@ -63,14 +63,6 @@
       "time": "14 horas",
       "size": 0,
       "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
-    },
-    {
-      "id": 9,
-      "name": "VETORES E ANIMAÇÃO COM SVG",
-      "desc": "Curso da feito na Alura para a compreensão sobre o funcionamento da tag svg e como fazer animações com a mesma.",
-      "time": "6 horas",
-      "size": 0,
-      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
     }
   ],
   "en": [
@@ -135,14 +127,6 @@
       "name": "HTTP: Understanding the Web Behind the Scenes",
       "desc": "Alura course to enhance understanding of how the Web works.",
       "time": "14 hours",
-      "size": 0,
-      "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
-    },
-    {
-      "id": 9,
-      "name": "Vectors and Animation with SVG",
-      "desc": "Alura course for understanding the functionality of the SVG tag and how to create animations with it.",
-      "time": "6 hours",
       "size": 0,
       "link": "https://cursos.alura.com.br/certificate/9aa46e1a-ca81-4d4c-ad8f-f352d1480982"
     }
