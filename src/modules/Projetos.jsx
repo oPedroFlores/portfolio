@@ -88,7 +88,7 @@ const SimpleSlider = ({ vhNow, lenguage }) => {
   const mainControls = useAnimation();
   React.useEffect(() => {
     mainControls.start('visible');
-  }, [isInView, mainControls, vhNow]);
+  }, [isInView, mainControls, vhNow, filteredProjects]);
 
   // Tradução
 

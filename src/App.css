@@ -261,7 +261,9 @@ font-size: 1.25rem !important;
 }
 
 /*Sobre Mim*/
-
+.invisible{
+  display: none;
+}
 .waveHand {
   font-size: 4rem;
   animation-name: wave-animation;  

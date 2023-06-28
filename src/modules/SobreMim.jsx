@@ -9,6 +9,7 @@ import englishCV from '../englishcv.pdf';
 const SobreMim = ({ lenguage }) => {
   const cvFile = lenguage ? englishCV : portugueseCV;
   const textAprRef = useRef(null);
+  const textAprRef2 = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false); // Flag de carregamento
 
   useEffect(() => {
@@ -24,6 +25,9 @@ const SobreMim = ({ lenguage }) => {
 
     if (textAprRef.current) {
       typeWritter(textAprRef.current);
+    }
+    if (textAprRef2.current) {
+      typeWritter(textAprRef2.current);
     }
   }, [isLoaded]);
 
@@ -68,7 +72,7 @@ const SobreMim = ({ lenguage }) => {
         </motion.h3>
         <motion.div className="containerApresentation">
           <motion.p
-            className="textApresentation"
+            className={lenguage ? 'invisible' : 'textApresentation'}
             ref={textAprRef}
             variants={{
               hidden: { opacity: 0, x: -125 },
@@ -78,7 +82,24 @@ const SobreMim = ({ lenguage }) => {
             animate="visible"
             transition={{ duration: 0.5, delay: 0.25 }}
           >
-            {translation['resume']}
+            Olá, eu me chamo Pedro Flores. Sou um desenvolvedor com Foco no
+            Front-End e sou graduando em Análise e Desenvolvimento de Sistemas
+            pela FATEC de Lins.
+          </motion.p>
+          <motion.p
+            className={lenguage ? 'textApresentation' : 'invisible'}
+            ref={textAprRef2}
+            variants={{
+              hidden: { opacity: 0, x: -125 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.25 }}
+          >
+            Hello, my name is Pedro Flores. I am a Front-End developer and I am
+            currently pursuing a degree in Systems Analysis and Development at
+            FATEC Lins.
           </motion.p>
         </motion.div>
       </div>
