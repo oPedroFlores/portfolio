@@ -11,16 +11,25 @@ const NavBar = ({ vhNow, setVhNow, lenguage, setLenguage }) => {
 
   const [isLoaded, setIsLoaded] = React.useState(false); // Flag de carregamento
 
+  let lastY = null; // Variável para armazenar a última posição do toque
+
   const handleTouchMove = (event) => {
     const touch = event.touches[0];
     const currentY = touch.pageY;
-    const scrollPosition = currentY / vh;
 
-    const newVhNow = Math.floor(scrollPosition);
-
-    if (newVhNow !== vhNow) {
-      setVhNow(newVhNow);
+    if (lastY !== null) {
+      if (currentY > lastY) {
+        // Scroll down
+        setVhNow(vhNow + 1);
+        console.log('Scroll Down');
+      } else if (currentY < lastY) {
+        // Scroll up
+        setVhNow(vhNow - 1);
+        console.log('Scroll Up');
+      }
     }
+
+    lastY = currentY; // Atualiza a última posição do toque
   };
 
   useEffect(() => {
