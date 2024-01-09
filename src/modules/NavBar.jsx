@@ -20,12 +20,12 @@ const NavBar = ({ vhNow, setVhNow, lenguage, setLenguage }) => {
     if (lastY !== null) {
       if (currentY > lastY) {
         // Scroll down
-        setVhNow(vhNow + 1);
-        console.log('Scroll Down');
-      } else if (currentY < lastY) {
-        // Scroll up
         setVhNow(vhNow - 1);
         console.log('Scroll Up');
+      } else if (currentY < lastY) {
+        // Scroll up
+        setVhNow(vhNow + 1);
+        console.log('Scroll Down');
       }
     }
 
