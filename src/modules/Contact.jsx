@@ -5,29 +5,43 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 const Contact = ({ lenguage, vhNow }) => {
   const form = React.useRef();
   const [send, setSend] = React.useState(false);
-  const [success, setSuccess] = React.useState();
+  const [sending, setSending] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
+  const [message, setMessage] = React.useState('');
+  const [userName, setUserName] = React.useState('');
+  const [userEmail, setUserEmail] = React.useState('');
+  const [userMessage, setUserMessage] = React.useState('');
   const sendEmail = (e) => {
+    if (sending) return;
+    setSending(true);
     e.preventDefault();
+    const serviceID = 'service_ndnpdpr';
+    const templateID = 'template_jxdxadq';
+    const userID = 'KBuKQrHHeWsicceTu';
 
-    emailjs
-      .sendForm(
-        'service_ndnpdpr',
-        'template_jxdxadq',
-        form.current,
-        'KBuKQrHHeWsicceTu',
-      )
-      .then(
-        (result) => {
-          setSend(true);
-          setSuccess(true);
-          console.log(result.text);
-        },
-        (error) => {
-          setSend(false);
-          setSuccess(false);
-          console.log(error.text);
-        },
-      );
+    let params = {
+      user_name: userName,
+      user_email: userEmail,
+      message: userMessage,
+    };
+
+    emailjs.send(serviceID, templateID, params, userID).then(
+      () => {
+        setMessage('Mensagem enviada com sucesso!');
+        setSuccess(true);
+        params = {
+          user_name: '',
+          user_email: '',
+          message: '',
+        };
+      },
+      () => {
+        setMessage('Mensagem não enviada');
+        setSuccess(false);
+      },
+    );
+
+    setSending(false);
   };
 
   //Animation
@@ -43,14 +57,16 @@ const Contact = ({ lenguage, vhNow }) => {
   return (
     <section className={styles.section}>
       <div className={styles.contactSection} ref={ref}>
-        {send ? (
+        {success && message ? (
           <motion.h4
             variants={{
               hidden: { scale: 0.3 },
               visible: { scale: 1 },
             }}
             initial="hidden"
-            animate={mainControls}
+            animate="visible"
+            transition={{ duration: 0.5 }}
+            className={success && message ? styles.sendMessage : ''}
           >
             {lenguage ? (
               <h4>Your message has been sent successfully</h4>
@@ -70,15 +86,29 @@ const Contact = ({ lenguage, vhNow }) => {
         ) : (
           <form ref={form} onSubmit={sendEmail}>
             <div className={styles.inputBox}>
-              <input type="text" name="user_name" required />
+              <input
+                type="text"
+                name="user_name"
+                required
+                onChange={(e) => setUserName(e.target.value)}
+              />
               <span>{lenguage ? 'Your name' : 'Seu nome'}</span>
             </div>
             <div className={styles.inputBox}>
-              <input type="text" name="user_email" required />
+              <input
+                type="text"
+                name="user_email"
+                required
+                onChange={(e) => setUserEmail(e.target.value)}
+              />
               <span>{'Email'}</span>
             </div>
             <div className={styles.inputBox}>
-              <textarea name="message" required />
+              <textarea
+                name="message"
+                required
+                onChange={(e) => setUserMessage(e.target.value)}
+              />
               <span>{lenguage ? 'Your message...' : 'Sua mensagem...'} </span>
             </div>
 
@@ -90,13 +120,6 @@ const Contact = ({ lenguage, vhNow }) => {
               </svg>
             </button>
           </form>
-        )}
-        {send ? (
-          <button className={styles.sendAgain} onClick={() => setSend(false)}>
-            {lenguage ? 'Send another message' : 'Enviar outra mensagem'}
-          </button>
-        ) : (
-          ''
         )}
       </div>
     </section>

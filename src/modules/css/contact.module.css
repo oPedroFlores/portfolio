@@ -1,4 +1,4 @@
-.section{
+.section {
   height: 100vh;
   padding-top: 75px;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.contactSection{
+.contactSection {
   display: flex;
   gap: 100px;
   max-height: 700px;
@@ -16,30 +16,35 @@
   justify-content: center;
   border-radius: 20px;
   padding: 50px;
-  background-color:  rgb(11, 10, 10);
+  background-color: rgb(11, 10, 10);
   max-width: 60%;
   min-width: 50%;
 }
 
-h4{
+h4 {
   width: 400px;
   text-align: center;
   font-size: 2.5rem;
 }
-form{
-  transition: .3s ease;
+
+.sendMessage {
+  transform: scale(1) !important;
+}
+
+form {
+  transition: 0.3s ease;
   gap: 20px;
   display: flex;
   flex-direction: column;
 }
 
-
-.inputBox{
+.inputBox {
   position: relative;
   width: 400px;
 }
 
-.inputBox input, .inputBox textarea{
+.inputBox input,
+.inputBox textarea {
   width: 100%;
   padding: 10px 30px 10px 10px;
   border: 1px solid;
@@ -51,27 +56,26 @@ form{
   font-size: 1.25rem;
 }
 
-.inputBox textarea{
+.inputBox textarea {
   height: 200px;
 }
 
-.inputBox span{
+.inputBox span {
   position: absolute;
   left: 0;
   padding: 10px;
   text-transform: uppercase;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span,
 .inputBox textarea:valid ~ span,
-.inputBox textarea:focus ~ span
-{
+.inputBox textarea:focus ~ span {
   transform: translateX(10px) translateY(-18px);
-  font-size: .65rem;
-  background-color:   rgb(11, 10, 10);
+  font-size: 0.65rem;
+  background-color: rgb(11, 10, 10);
   border-left: 1px solid;
   border-right: 1px solid;
 }
@@ -84,137 +88,147 @@ form{
   margin: auto;
   color: var(--lightblue);
   padding: 19px 22px;
-  transition: all .2s ease; }
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba(228, 222, 208, 1);
-    width: 56px;
-    height: 56px;
-    transition: all .3s ease; }
-  .cta span {
-    position: relative;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 900;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    vertical-align: middle; }
-  .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--lightblue);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all .3s ease; }
-  .cta:hover:before {
-    width: 100%;
-    background: #e4ded0; }
-  .cta:hover svg {
-    stroke: black;
-    transform: translateX(0); }
-  .cta:active {
-    transform: scale(0.96); }
-  .cta:hover span{
-    
-    color: black;
-  }
-  .sendAgain {
-    padding: 20px 0;
-    max-width: 400px;
-    min-width: 250px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(228, 222, 208, 1);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--lightblue);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #e4ded0;
+}
+.cta:hover svg {
+  stroke: black;
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+.cta:hover span {
+  color: black;
+}
+.sendAgain {
+  padding: 20px 0;
+  max-width: 400px;
+  min-width: 250px;
 
-    position: absolute;
-    top: 70%;
-    border: 1px solid var(--lightblue);
-    background: none;
-    color: var(--lightblue);
-    font-size: 1.25rem;
-    overflow: hidden;
-    cursor: pointer;
+  position: absolute;
+  top: 70%;
+  border: 1px solid var(--lightblue);
+  background: none;
+  color: var(--lightblue);
+  font-size: 1.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sendAgain::before {
+  content: '';
+  width: 100%;
+  height: 50%;
+  top: -51%;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  z-index: -5;
+  transition: 0.3s all ease-in-out;
+}
+
+.sendAgain::after {
+  z-index: -5;
+  background-color: var(--lightblue);
+  bottom: -51%;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0;
+  left: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.sendAgain:hover {
+  color: black;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+  z-index: 50;
+}
+
+.sendAgain:hover::before {
+  height: 50%;
+  transition: 0.3s all ease-in-out;
+  background-color: var(--lightblue);
+  top: 0;
+}
+
+.sendAgain:hover::after {
+  height: 50%;
+  transition: 0.3s all ease-in-out;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .inputBox {
+    width: 300px !important;
   }
-  
-  .sendAgain::before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    top: -51%;
-    left: 0;
-    position: absolute;
-    z-index: 0;
-    z-index: -5;
-    transition: .3s all ease-in-out;
+}
+@media (max-width: 1000px) {
+  .contactSection {
+    gap: 50px;
+    flex-direction: column;
   }
-  
-  .sendAgain::after {
-    z-index: -5;
-    background-color: var(--lightblue);
-    bottom: -51%;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 0;
-    left: 0;
-    transition: .3s all ease-in-out;
+}
+@media (max-width: 750px) {
+  .contactSection h4 {
+    font-size: 1.75rem;
+    width: 75%;
   }
-  
-  .sendAgain:hover {
-    color: black;
-    font-weight: bold;
-    transition: .3s all ease-in-out;
-    z-index: 50;
+}
+@media (max-width: 600px) {
+  .inputBox {
+    width: 200px !important;
   }
-  
-  .sendAgain:hover::before {
-    height: 50%;
-    transition: .3s all ease-in-out;
-    background-color: var(--lightblue);
-    top: 0;
+}
+
+@media (max-width: 500px) {
+  .contactSection h4 {
+    font-size: 1.5rem;
+    width: 90%;
   }
-  
-  .sendAgain:hover::after {
-    height: 50%;
-    transition: .3s all ease-in-out;
-    bottom: 0;
+  .contactSection {
+    max-width: 80%;
   }
-  
-  @media (max-width: 1200px){
-    .inputBox{
-      width: 300px !important;
-    }
-  }
-  @media (max-width: 1000px){
-    .contactSection{
-      gap: 50px;
-      flex-direction: column;
-    }
-  }
-  @media (max-width: 750px){
-    .contactSection h4{
-      font-size: 1.75rem;
-      width: 75%;
-    }
-  }
-  @media (max-width: 600px){
-    .inputBox{
-      width: 200px !important;
-    }
-  }
-  
-  @media (max-width: 500px){
-    .contactSection h4{
-      font-size: 1.5rem;
-      width: 90%;
-    }
-    .contactSection{
-      max-width: 80%;
-    }
-  }
+}
+
+.disabledButton {
+  pointer-events: none;
+}
